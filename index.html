@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Please Note: All icons and buttons on the site have been sourced from FontAwesome [https://fontawesome.com/] and W3Schools.com [https://www.w3schools.com/howto/howto_css_social_media_buttons.asp]-->
+    <!--Please Note: All images on the site have been sourced from Pexels.com [https://www.pexels.com/]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content=", UK">
+        <meta name="keywords" content="black, women, health, wellness, mindfullness, UK">
+        <title>Coca Women Wellness</title>
+        <!--Include these stylesheets in any page of this site-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <!--The stytlesheet below is linked this way as it links to the local bootstrap css and js folders on my device and included in this repo. Source[https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <link rel="stylesheet" href="assets/css/bootstrap-sourcecode/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!--Image Credit: Asa Dugger-->
+        <aside>
+            <img class="img-index" src="assets/images/pexels-photo-1666073.jpeg" alt="young lady in yellow dress smiling"> 
+        </aside>
+
+        <header>
+            <!--Nav bar code has been sourced from Bootstrap.com. However, I have customsied some of the elements Origin Source:[https://getbootstrap.com/docs/4.0/components/navbar/]-->
+            <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Do not change this <a> tag as it holds the logo for the website-->
+                <a href="index.html"><img src="assets/images/logowtextncb72dpi.png" alt="woman with outlined face logo" id="img-logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto" id="menu">
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="recipes.html">RECIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="connect.html">CONNECT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--The grid system has been sourced from Bootstrap: [https://getbootstrap.com/docs/4.1/layout/grid/]. However I have cutomised the styling property values (see style.css file in this repo)-->
+        <main class="container">
+            <div class="home-headline">
+                <h1>COCA WOMEN WELLNESS</h1> 
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <!--The aria-label has been used insted of aria-labelledby as text is not visble. For more information: [https://www.w3.org/TR/wai-aria/#aria-label]-->
+                    <!--The "aria-hidden=true" element been applied to the icon tags as they have sematic meaning. For more information: [https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility]-->
+                    <a href="#oursocial" aria-label="calendar-icon" aria-hidden="true" class="homeicon"><i class="far fa-calendar-alt"></i></a>
+                    <h3>Our Socials</h3>
+                    <p>As we are based in the UK, we hold a mixture of online and ‘in-person’ meetups. As of June 2021, we hold regular fortnightly meetings, most of our ‘in-person’ meetups are held in the city of Manchester. However, we do host an annual group get-away to a destination of choice.</p>
+                </div>
+                <div class="col-sm">
+                    <a href="playlists.html" aria-label="laptop-icon" aria-hidden="true" class="homeicon"><i class="fas fa-laptop"></i></a>
+                    <h3>Our Resources</h3>
+                    <p>Coca Women Wellness hopes to provide useful digital resources that can help develop ‘mindful’ techniques and evoke inspiring conversation around several wellbeing topics. Further, as one of our core initiatives are to focus on the wellbeing of communities from the African & Caribbean diaspora – much of the resources showcased on this site has been curated by African & Caribbean influencers.</p>
+                </div>
+                <div class="col-sm">
+                    <a href="#footer" aria-label="laptop-icon" aria-hidden="true" class="homeicon"><i class="fas fa-users"></i></a>
+                    <h3>Our Community</h3>
+                    <p>Through our social media channels and forums (check out our discord), we aspire to foster an online community for women, particularly of the African & Caribbean diaspora. Our community strives to facilitate positive, thought-provoking discussion around topics and common socio-cultural factors that often impacts wellbeing. </p>
+                </div>
+            </div> 
+            
+            <div class="home-headline">
+                <h1>OUR MEETUPS</h1> 
+            </div>
+
+            <div class="row" id="oursocial">
+                <div class="col-sm">
+                    <!--The link opens up a new tab for the destination page-->
+                    <a href="https://www.eventbrite.co.uk/" aria-label="fork-and-knife-icon" aria-hidden="true" target="_blank" rel="external" class="homeicon"><i class="fas fa-utensils"></i></a>
+                    <h3>In-person Social</h3>
+                    <span>Date:</span><span> 04/06/2021</span>
+                    <br>
+                    <span>Time:</span><span> 19:00-21:00pm</span>
+                    <br>
+                    <span>Location:</span><span> Bar Burrito, Picaddily Manchester, UK</span>
+                </div>
+                <div class="col-sm">
+                    <!--The link opens up a new tab for the destination page-->
+                    <a href="https://zoom.us/" aria-label="video-icon" aria-hidden="true" target="_blank" rel="external" class="homeicon"><i class="fas fa-video"></i></a>
+                    <h3>Online Social</h3>
+                    <span>Date:</span><span> 18/06/2021</span>
+                    <br>
+                    <span>Time:</span><span> 19:00-20:30pm</span>
+                    <br>
+                    <span>Location:</span><span> Zoom</span>                    
+                </div>
+                <div class="col-sm">
+                    <!--The link opens up a new tab for the destination page-->
+                    <a href="https://www.eventbrite.co.uk/" aria-label="fork-and-knife-icon" aria-hidden="true" target="_blank" rel="external" class="homeicon"><i class="fas fa-utensils"></i></a>
+                    <h3>In-person Social</h3>
+                    <span>Date:</span><span> 02/07/2021</span>
+                    <br>
+                    <span>Time:</span><span> 19:00-21:00pm</span>
+                    <br>
+                    <span>Location:</span><span> Pizza Hut, Picaddily Manchester, UK</span>
+                </div>  
+            </div>
+        </main>
+
+        <!-- The code for the element button has been adapted from a W3School tutorial. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <button onclick="topFunction()" id="backtoheader" title="Go to top" aria-label="upward arrow scrolls to top" aria-hidden="true"><i class="fas fa-arrow-up"></i></button>
+
+        <!--The class 'home-footer-style' dictates the stylyling of the element (e.g. yellow for the index.html)'-->
+        <footer class="home-footer-style" id="footer">
+            <div class="sm-links">
+                <!--The links opens up a new tab for the destination page-->
+                <a href="https://twitter.com/" target="_blank" rel="external" aria-label="twitter-tag" aria-hidden="true" class="fa fa-twitter"></a>
+                <a href="https://discord.com/" target="_blank" rel="external" aria-label="discord-tag" aria-hidden="true" class="fab fa-discord"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="external" aria-label="instagram-tag" aria-hidden="true" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="external" aria-label="youtube-tag" aria-hidden="true" class="fa fa-youtube"></a>
+                <a href="https://www.pinterest.co.uk/" target="_blank" rel="external" aria-label="pinterest-tag" aria-hidden="true" class="fa fa-pinterest"></a>
+            </div>
+            <div id="copyright-style">Copyright<span> &#169; </span> Coca Women Wellness. All Rights Reserved 2021.</div>
+        </footer>
+
+        <!--This script has been adapted from a W3School Tutorial. The 'getElementById' condition has been customised by me. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <script src="assets/js/scroll-feature/scroll.js"></script>
+
+        <!--Fontawesome script is below, this supports the icons used throughout the website's pages-->
+        <script src="https://kit.fontawesome.com/1699136767.js" crossorigin="anonymous"></script>
+      
+        <!--This script below is linked this way as it links to the local bootstrap js folders on my device and included in this repo. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="assets/js/bootstrap-sourcecode/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with some functionalities on the site as I am using some Bootstrap components. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
+        <!--This script has been included to assist with the navigation bar, Bootstrap component. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Please Note: All icons and buttons on the site have been sourced from FontAwesome [https://fontawesome.com/] and W3Schools.com [https://www.w3schools.com/howto/howto_css_social_media_buttons.asp]-->
+    <!--Please Note: All images on the site have been sourced from Pexels.com [https://www.pexels.com/]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content=", UK">
+        <meta name="keywords" content="black, women, health, wellness, mindfullness, UK">
+        <title>Coca Women Wellness</title>
+        <!--Include these stylesheets in any page of this site-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <!--The stytlesheet below is linked this way as it links to the local bootstrap css and js folders on my device and included in this repo. Source[https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <link rel="stylesheet" href="assets/css/bootstrap-sourcecode/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!--Image Credit: RF._.studio-->
+        <aside>
+            <img class="img-recipes" src="assets/images/pexels-rfstudio-3622643.jpg" alt="lady cooking in kitchen"> 
+        </aside>
+        
+        <!--The class 'recipes-header-style dictates the stylyling of the element (e.g. cream for the recipes.html)'-->
+        <header class="recipes-header-style">
+            <!--Nav bar code has been sourced from Bootstrap.com. However, I have customsied some of the elements Origin Source:[https://getbootstrap.com/docs/4.0/components/navbar/]-->
+            <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Do not change this <a> tag as it holds the logo for the website-->
+                <a href="index.html"><img src="assets/images/logowtextncb72dpi.png" alt="woman with outlined face logo" id="img-logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="recipes.html">RECIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="connect.html">CONNECT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="recipe-header">
+                <h1>OUR RECIPES</h1>
+                <p>Below we have provided a couple of scrumptious recipies! Please feel free to try them out and share your results with us on one of our<a href="#footer">social media channels!</a></p>
+            </section>
+
+            <!--First center image. Credit: Pixabay-->
+            <img src="assets/images/pexels-pixabay-357573sfwv.jpg" class="center-recipe" alt="stacked pancakes on a plate with honey drizzled over them">
+
+            <!--The aria-label has been used insted of aria-labelledby as text is not visble. For more information: [https://www.w3.org/TR/wai-aria/#aria-label]-->
+            <!--The "aria-hidden=true" element been applied to the icon tags as they have sematic meaning. For more information: [https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility]-->
+            <section class="recipe-boxes">
+                <div id="box1">
+                    <h2>Gluten-free Pancakes</h2>
+                        <span><i class="far fa-clock"></i> 30-minutes</span><span><i class="fas fa-utensils"></i> Serves 3 people</span>
+                        <p>For some, gluten free food can help aid digestion and inflammation! With that in mind, these gluten free pancakes are a beautiful treat for anyone with a sweet tooth. At least we can feel less guilty about eating it as it is gluten free!</p>
+                    <h3>Ingredients</h3>
+                        <ul>
+                            <li>250g gluten-free plain flour</li>
+                            <li>¼ cup of coconut sugar (use any sugar/sweetener of your choice)</li>
+                            <li>¼ tsp Xanthan gum (optional, depending on whether the flour has a raising agent in it already)</li>
+                            <li>1 egg</li>
+                            <li>250ml Almond milk (use any milk/sweetener of your choice)</li>
+                            <li>Dairy free / gluten-free butter of your choice</li>
+                            <li>Honey</li>
+                            <li>Sliced strawberries (as much as you want as this is for the topping)</li>
+                        </ul>
+                    <h3>Instructions</h3>
+                        <ol>
+                            <li>Turn your oven hob on and let the frying pan heat up to a medium heat.</li>
+                            <li>Mix the milk, sugar, and egg together until fully combined</li>
+                            <li>Add the flour to the milk, egg, and sugar mixture. Mix well until fully combined.</li>
+                            <li>Once the frying pan is hot, add some butter to the pan and let it spread around the pan base.</li>
+                            <li>Add the pancake batter to the pan. Wait for the bottom of the pancake to brown and then flip.</li>
+                            <li>Once both sides are brown, remove the pancake from the pan and place on the plate. </li>
+                            <li>Repeat the process until the pancake batter has been used. Stack each pancake on top of each other.</li>
+                            <li>Drizzle honey over the pancakes and add strawberries on top for extra flavour!</li>
+                        </ol>
+                </div>
+            </section>
+
+            <!--Second center image.  Credit: Charlotte May-->
+            <img src="assets/images/pexels-charlotte-may-5947012sfwv.jpg" class="center-recipe" alt="fizzy red drink pured into a glass infront of a black background">
+
+            <section class="recipe-boxes">
+                <div id="box2">
+                    <h2>Sorrel Juice</h2>
+                        <span><i class="far fa-clock"></i> 45-minutes</span>
+                        <p>Sorrel juice is a traditional drink served in many areas of the world, particularly in the Caribbean! The leaves are consumable and has anti-inflammatory properties. It is also used to help treat bacterial infections. It’s great to add to herbal teas too!</p>
+                    <h3>Ingredients</h3> 
+                        <ul>
+                            <li>1 cup of dried Sorrel leaves</li>
+                            <li>2 Oranges (Keep the rind, we will need this)</li>
+                            <li>1 Cinnamon stick</li>
+                            <li>1 Lemon</li>
+                            <li>1 tsp of Cloves</li>
+                            <li>500ml of water</li>
+                        </ul>
+                    <h3>Instructions</h3>
+                        <ol>
+                            <li>Add water to a pot and place the pot on the hob.</li>
+                            <li>Wash the sorrel leaves and add to the pot.</li>
+                            <li>Cut the lemon in half and squeeze some of the juice into the pot. The quantity is up to you, just remember lemon juice is bitter and too much can make the juice bitter tasting. </li>
+                            <li>Peel some of the rind off the orange and add to the pot.</li>
+                            <li>Squeeze all the juice of the orange into the pot.</li>
+                            <li>Break the cinnamon stick into pieces and add to the pot. Add the cloves also. </li>
+                            <li>Place the pot onto the oven hob and bring the pot to a rolling boil.</li>
+                            <li>Once boiling, reduce the heat to a medium-low temperature. Add the lid to the pot and let the mixture simmer for 30 minutes.</li>
+                            <li>After 30-minutes remove the pot from the hob and drain the juice through a strainer into another large bowl or container.</li>
+                            <li>Allow the juice to fully cool down in this container and then store in the fridge. I like to transfer the juice to a glass bottle before putting it into the fridge.</li>
+                        </ol>
+                </div>
+            </section>
+
+            <!--Third center image. Credit: Vicky Tran-->   
+            <img src="assets/images/pexels-vicky-tran-3273989sfwv.jpg"  class="center-recipe" alt="lemon, cinnamon and tea in a mason jar">
+            
+            <section class="recipe-boxes">
+                <div id="box3">
+                    <h2>Ginger Cinnamon Tea</h2>
+                        <span><i class="far fa-clock"></i> 15-minutes</span>
+                        <p>Some of the key health benefits of ginger is that it can help lower blood sugar levels and aid indigestion. Similarly, cinnamon also has anti-inflammatory properties and can help to strengthen the body’s sensitivity to insulin! Besides the health benefits it tastes amazing and feels ‘yummy going into the tummy’.</p>
+                    <h3>Ingredients</h3> 
+                        <ul>
+                            <li>1 tsp of ginger or 3 slices of large ginger root</li>
+                            <li>¼ tsp on cinnamon powder of ½ a cinnamon stick</li>
+                            <li>1 slice of lemon</li>
+                            <li>Hot water (quantity depends on the size of your mug!)</li>
+                        </ul>
+                    <h3>Instructions</h3>
+                        <ol>
+                            <li>Fill your kettle with water and bring to a boil.</li>
+                            <li>If using ginger powder, measure one teaspoon and add to your mug.</li>
+                            <li>Add the cinnamon powder too.</li>
+                            <li>Cut a slice of lemon and add to your cup.</li>
+                            <li>Once the water has boiled, add it to the mug and stir, let the tea steep for 1-2 minutes and enjoy your tea!</li>
+                        </ol>
+                            <p> If using the ginger root slices and cinnamon stick, boil the kettle and then…</p>
+                        <ol>
+                            <li>Cut the slices of ginger and add to a small pot.</li>
+                            <li>Break the cinnamon sticks into small pieces and add to the pot too.</li>
+                            <li>Once the water has boiled, add enough to the small pot so it covers the ingredients. Bring the pot to boil for 5-10 minutes.</li>
+                            <li>Then, through using a strainer, strain the mixture into your mug and then stir.</li>
+                            <li>Add the lemon slice into your tea and enjoy!</li>
+                        </ol>
+                </div>
+            </section>
+        </main>
+
+        <!-- The code for the element button has been adapted from a W3School tutorial. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <button onclick="topFunction()" id="backtoheader" title="Go to top" aria-label="upward-arrow-pointer" aria-hidden="true"><i class="fas fa-arrow-up"></i></button>
+
+        <!--The class 'recipes-footer-style' dictates the stylyling of the element (e.g. cream for the about.html)'-->
+        <!--The 'id=footer' is linked to text in the top paragraph of this page-->
+        <footer id="footer" class="recipes-header-style">
+
+            <div class="sm-links">
+                <!--The links opens up a new tab for the destination page-->
+                <a href="https://twitter.com/" target="_blank" rel="external" aria-label="twitter-tag" aria-hidden="true" class="fa fa-twitter"></a>
+                <a href="https://discord.com/" target="_blank" rel="external" aria-label="discord-tag" aria-hidden="true" class="fab fa-discord"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="external" aria-label="instagram-tag" aria-hidden="true" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="external" aria-label="youtube-tag" aria-hidden="true" class="fa fa-youtube"></a>
+                <a href="https://www.pinterest.co.uk/" target="_blank" rel="external" aria-label="pinterest-tag" aria-hidden="true" class="fa fa-pinterest"></a>
+            </div>
+            <div id="copyright-style">Copyright<span> &#169; </span> Coca Women Wellness. All Rights Reserved 2021.</div>
+        </footer>
+
+        <!--This script has been adapted from a W3School Tutorial. The 'getElementById' condition has been customised by me. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <script src="assets/js/scroll-feature/scroll.js"></script>
+
+        <!--Fontawesome script is below, this supports the icons used throughout  the website's pages-->
+        <script src="https://kit.fontawesome.com/1699136767.js" crossorigin="anonymous"></script>
+      
+        <!--This script below is linked this way as it links to the local bootstrap js folders on my device and included in this repo. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="assets/js/bootstrap-sourcecode/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with some functionalities on the site as I am using some Bootstrap components. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with the navigation bar, Bootstrap component. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html> 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Please Note: All icons and buttons on the site have been sourced from FontAwesome [https://fontawesome.com/] and W3Schools.com [https://www.w3schools.com/howto/howto_css_social_media_buttons.asp]-->
+    <!--Please Note: All images on the site have been sourced from Pexels.com [https://www.pexels.com/]-->
+    <!--These videos (see iframe elements) have been sourced from Youtube.com-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content=", UK">
+        <meta name="keywords" content="black, women, health, wellness, mindfullness, UK">
+        <title>Coca Women Wellness</title>
+        <!--Include these stylesheets in any page of this site-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <!--The stytlesheet below is linked this way as it links to the local bootstrap css and js folders on my device and included in this repo. Source[https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <link rel="stylesheet" href="assets/css/bootstrap-sourcecode/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!--Image Credit: 3Motional Studio-->
+        <aside>
+            <img class="img-playlists" src="assets/images/pexels-motional-studio-1081685_fulledited.jpg" alt="woman staring upwards, blue filter overlay"> 
+        </aside>
+
+        <!--The class 'playlists-header-style dictates the stylyling of the element (e.g. blue for the about.html)'-->
+        <header class="playlists-header-style">
+            <!--Nav bar code has been sourced from Bootstrap.com. However, I have customsied some of the elements Origin Source:https://getbootstrap.com/docs/4.0/components/navbar/-->
+            <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Do not change this <a> tag as it holds the logo for the website-->
+                <a href="index.html"><img src="assets/images/logowtextncb72dpi.png" alt="woman with outlined face logo" id="img-logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="recipes.html">RECIPES</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="connect.html">CONNECT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+        <!--The grid system has been sourced from Bootstrap: [https://getbootstrap.com/docs/4.1/layout/grid/]. However I have cutomised the styling property values (see style.css file in this repo)-->
+        <main class="container">
+            <section id="playlist-header">
+                <h1>OUR PLAYLISTS</h1>
+                <p>Want to cook something healthy and delicious, learn some new ‘yogi’ techniques or even want to chill to some music while you ‘centre’? Below are some online videos that can help you on your mindfulness and wellness journey. We have also compiled <em>tailored playlists</em> with digital resources by wellness influencers to assist you in reaching your mindfulness goals.</p>
+                <p>Just click the <span>icons</span> below to access them and enjoy!</p>
+            </section>
+
+            <!--Youtuber Credit: Evelyn from the Internets-->
+            <!--Aria-label attribute has been applied to <iframe> based o guidance. Source [https://act-rules.github.io/rules/cae760]-->
+            <div>
+                <iframe aria-label="first embedded youtube video" aria-hidden="true" src="https://www.youtube.com/embed/yZWvSLqnqUI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!--The aria-label has been used insted of aria-labelledby as text is not visble. For more information: [https://www.w3.org/TR/wai-aria/#aria-label]-->
+            <!--The "aria-hidden=true" element been applied to the icon tags as they have sematic meaning. For more information: [https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility]-->
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://youtube.com/playlist?list=PLniLXGit6Sw6Pp1qpTtTqXwIk00rOp5gg" aria-label="utensils icon, provides external link to youtube playlist" aria-hidden="true" target="_blank" rel="external" class="playlisticon"><i class="fas fa-utensils"></i></a>
+                    <h2>Food</h2>
+                    <p>Not sure about you but we love food! Feeding our bodies is just as important as feeding our minds. This playlist provides healthy recipes that not only looks good but are nourishing too!</p>
+                </div>
+                <div class="col-sm">
+                    <a href="https://youtube.com/playlist?list=PLniLXGit6Sw6QmYzT0w2D86RdVviGI_Hl" aria-label="dumbell icon, provides external link to youtube playlist" aria-hidden="true" target="_blank" rel="external" class="playlisticon"><i class="fas fa-dumbbell"></i></a> 
+                    <h2>Body</h2>
+                    <p>We love a good stretch, do you? This playlist consists of videos that provides guidance on basic exercises (e.g. yoga) that you can use to develop your overall physical balance and wellbeing. Feel free to check them out, always start slowly and gradually elevate your skills!</p>
+                </div>
+                <div class="col-sm">
+                    <a href="https://youtube.com/playlist?list=PLniLXGit6Sw5dqiang-B6izBkGaO8rMKm" aria-label="people icon, provides external link to youtube playlist" aria-hidden="true" target="_blank" rel="external" class="playlisticon"><i class="fas fa-user-friends"></i></a>
+                    <h2>Social</h2>
+                    <p>No one is a lone island. Positive social interactions with friends, family and peers are often great for our wellbeing. This playlist consists of content around both platonic, familial and romantic relationships. </p>
+                </div>
+            </div>
+
+            <!--Youtuber Credit: YogiApproved.com-->
+            <!--Aria-label attribute has been applied to <iframe> based o guidance. Source [https://act-rules.github.io/rules/cae760]-->
+            <div>
+                <iframe aria-label="second embedded youtube video" aria-hidden="true" src="https://www.youtube.com/embed/YnAXyTUE8Zw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://youtube.com/playlist?list=PLniLXGit6Sw4eSocGHUBONG4_jsh3Pb5Q" aria-label="musical note icon, provides external link to youtube playlist" aria-hidden="true" target="_blank" rel="external" class="playlisticon"><i class="fas fa-music"></i></a>
+                    <h2>Music</h2>
+                    <p>Who doesn’t love music? Whether we are having ‘me’ time, trying to create calm and tranquillity in your environment, or completing day-to-day tasks; this playlist provides a plethora of music that many have found these stress relieving.</p>
+                </div>
+                <div class="col-sm">
+                    <a href="https://youtube.com/playlist?list=PLniLXGit6Sw4GFxdhsAv8rirFOwrlNNj-" aria-label="brain icon, provides external link to youtube playlist" aria-hidden="true" target="_blank" rel="external" class="playlisticon"><i class="fas fa-brain"></i></a>
+                    <h2>Mind</h2>
+                    <p>Looking for new techniques to help you ‘centre’ and increase your overall equilibrium? Why not check out this playlist? We have collated several videos consisting of, but not limited to, guided meditation and relaxation.</p>
+                </div>
+            </div>
+
+            <!--Youtuber Credit: Beautiful Chorus-->
+            <!--Aria-label attribute has been applied to <iframe> based o guidance. Source [https://act-rules.github.io/rules/cae760]-->
+            <div>
+                <iframe aria-label=" third embedded youtube video" aria-hidden="true" src="https://www.youtube.com/embed/videoseries?list=PLniLXGit6Sw4eSocGHUBONG4_jsh3Pb5Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+        </main>
+
+        <!-- The code for the element button has been adapted from a W3School tutorial. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <button onclick="topFunction()" id="backtoheader" title="Go to top" aria-label="upward-arrow-pointer" aria-hidden="true"><i class="fas fa-arrow-up"></i></button>
+        
+        <!--The class 'playlists-footer-style' dictates the stylyling of the element (e.g. blue for the playlists.html)'-->
+        <footer class="playlists-footer-style">
+            <div class="sm-links">
+                <!--The links opens up a new tab for the destination page-->
+                <a href="https://twitter.com/" target="_blank" rel="external" aria-label="twitter-tag" aria-hidden="true" class="fa fa-twitter"></a>
+                <a href="https://discord.com/" target="_blank" rel="external" aria-label="discord-tag" aria-hidden="true" class="fab fa-discord"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="external" aria-label="instagram-tag" aria-hidden="true" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="external" aria-label="youtube-tag" aria-hidden="true" class="fa fa-youtube"></a>
+                <a href="https://www.pinterest.co.uk/" target="_blank" rel="external" aria-label="pinterest-tag" aria-hidden="true" class="fa fa-pinterest"></a>
+            </div>
+            <div id="copyright-style">Copyright<span> &#169; </span> Coca Women Wellness. All Rights Reserved 2021.</div>
+        </footer>
+
+        <!--This script has been adapted from a W3School Tutorial. The 'getElementById' condition has been customised by me. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <script src="assets/js/scroll-feature/scroll.js"></script>
+
+        <!--Fontawesome script is below, this supports the icons used throughout  the website's pages-->
+        <script src="https://kit.fontawesome.com/1699136767.js" crossorigin="anonymous"></script>
+      
+        <!--This script below is linked this way as it links to the local bootstrap js folders on my device and included in this repo. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="assets/js/bootstrap-sourcecode/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with some functionalities on the site as I am using some Bootstrap components. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with the navigation bar, Bootstrap component. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

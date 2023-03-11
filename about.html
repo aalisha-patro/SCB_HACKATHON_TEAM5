@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Please Note: All icons and buttons on the site have been sourced from FontAwesome [https://fontawesome.com/] and W3Schools.com [https://www.w3schools.com/howto/howto_css_social_media_buttons.asp]-->
+    <!--Please Note: All images on the site have been sourced from Pexels.com [https://www.pexels.com/]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content=", UK">
+        <meta name="keywords" content="black, women, health, wellness, mindfullness, UK">
+        <title>Coca Women Wellness</title>
+        <!--Include these stylesheets in any page of this site-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <!--The stytlesheet below is linked this way as it links to the local bootstrap css and js folders on my device and included in this repo. Source[https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <link rel="stylesheet" href="assets/css/bootstrap-sourcecode/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!--Image Credit: KoolShooters-->
+        <aside>
+            <img class="img-about" src="assets/images/pexels-koolshooters-7346634_cropped72dpi930w.jpg" alt="young lady meditating, against pink backdrop"> 
+        </aside>
+
+        <!--The class 'about-header-style dictates the stylyling of the element (e.g. pink for the about.html)'-->
+        <header class="about-header-style">
+            <!--Nav bar code has been sourced from Bootstrap.com. However, I have customsied some of the elements Origin Source:[https://getbootstrap.com/docs/4.0/components/navbar/]-->
+            <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Do not change this <a> tag as it holds the logo for the website-->
+                <a href="index.html"><img src="assets/images/logowtextncb72dpi.png" alt="woman with outlined face logo" id="img-logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="recipes.html">RECIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="connect.html">CONNECT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="about-contaner">
+            <!--Image of founder-->
+            <div class="founder">
+                <img src="assets/images/mesimply.jpeg" alt="founder looking down smiling" > 
+            </div>
+            <!--The aria-label has been used insted of aria-labelledby as text is not visble. For more information: [https://www.w3.org/TR/wai-aria/#aria-label]-->
+            <!--The "aria-hidden=true" element been applied to the icon tags as they have sematic meaning. For more information: [https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility]-->
+            <div class="about">
+                <h2><i class="fas fa-bullhorn"></i> Our mission</h2>
+                <p>As an online platform, our mission is to host online resources designed to develop mindful practices which can help to boost overall wellbeing. 
+                <p>For greater ease and accessibility, we use digital mediums (e.g. videos, playlists, images) to showcase primary-sourced (e.g. recipes) and secondary-sourced content. Some of these include but are not limited to videos on physical exercise, mindful practices, recipes, music, social discussions and even meditations techniques.</p>
+                <p>We hope you find Coca Women Wellness a useful tool in your day-to-day life and hope to connect with you somewhere across our social media channels!</p>
+            </div> 
+            <div class="about">
+                <h2><i class="fas fa-feather-alt"></i> About the founder</h2>
+                <p>Between 2015 and 2019 Sam attend the University of Greenwich, graduating with a 1st Class degree in BA Hons Public Relations & Communications. Once moving out and to another city in 2019, the pandemic hit, the world was in lockdown, and social interactions were almost completely limited to the screen.</p> 
+                <p>Such developments encouraged Sam to create Coca Women Wellness, an online platform designed to provide online communities with resources focused on promoting mindfulness practices and wellbeing.</p>
+                <p>In line with her passion for African & Caribbean culture(s), health, and wellbeing, she decided to create the online platform - Coca Women Wellness. Her key aspiration and hopes for this site is to increase awareness around a variety of content that positively influences African & Caribbean culture, and the wellbeing of those within it.</p>
+                <p>Sam is currently working on several projects shedding more light, and developing the presence of, African Caribbean culture in media, health and other social spheres.</p>
+            </div> 
+        </main>
+
+        <!-- The code for the element button has been adapted from a W3School tutorial. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <button onclick="topFunction()" id="backtoheader" title="Go to top" aria-label="upward-arrow-pointer" aria-hidden="true"><i class="fas fa-arrow-up"></i></button>
+
+        <!--The class 'about-footer-style' dictates the stylyling of the element (e.g. pink for the about.html)'-->
+        <footer class="about-footer-style">
+            <div class="sm-links">
+                <!--The links opens up a new tab for the destination page-->
+                <a href="https://twitter.com/" target="_blank" rel="external" aria-label="twitter-tag" aria-hidden="true" class="fa fa-twitter"></a>
+                <a href="https://discord.com/" target="_blank" rel="external" aria-label="discord-tag" aria-hidden="true" class="fab fa-discord"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="external" aria-label="instagram-tag" aria-hidden="true" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="external" aria-label="youtube-tag" aria-hidden="true" class="fa fa-youtube"></a>
+                <a href="https://www.pinterest.co.uk/" target="_blank" rel="external" aria-label="pinterest-tag" aria-hidden="true" class="fa fa-pinterest"></a>
+            </div>
+            <div id="copyright-style">Copyright<span> &#169; </span> Coca Women Wellness. All Rights Reserved 2021.</div>
+        </footer>
+
+        <!--This script has been adapted from a W3School Tutorial. The 'getElementById' condition has been customised by me. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <script src="assets/js/scroll-feature/scroll.js"></script>
+
+        <!--Fontawesome script is below, this supports the icons used throughout  the website's pages-->
+        <script src="https://kit.fontawesome.com/1699136767.js" crossorigin="anonymous"></script>
+      
+        <!--This script below is linked this way as it links to the local bootstrap js folders on my device and included in this repo. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="assets/js/bootstrap-sourcecode/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with some functionalities on the site as I am using some Bootstrap components. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with the navigation bar, Bootstrap component. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

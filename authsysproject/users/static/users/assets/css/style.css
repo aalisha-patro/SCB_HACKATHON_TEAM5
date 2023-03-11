@@ -1,0 +1,922 @@
+/*IMPORTS SECTION - STARTS* This import has been sourced from Google Fonts website: [https://fonts.google.com/]*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+/*IMPORTS SECTION - ENDS*/
+
+
+/*SITE WIDE PROPERTIES -STARTS*/
+/*The declarations has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=qTGbWfEEnKI&list=PLH7H7OKKWG3T0SAJxSVBxr-Qz-219iWeH&index=11]*/
+body, html {
+    height: 100vh;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color:  rgb(255, 255, 255);
+}
+/*SITE WIDE PROPERTIES -ENDS*/
+
+
+/*NAVIGATION MENU - STARTS*/
+#img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+
+/*The declarations has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=qTGbWfEEnKI&list=PLH7H7OKKWG3T0SAJxSVBxr-Qz-219iWeH&index=11]*/
+header {
+    grid-area: header;
+    background-color: rgb(255, 215, 0);
+}
+
+#menu li {
+    list-style-type: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;  
+    letter-spacing: .1em; 
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(62, 13, 5, 0.8);
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+
+#menu a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*This class is linked to Bootsrap's Nav Bar component, unable to customise class name.*/
+.navbar-toggler {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.active{
+    text-decoration: underline;
+}
+/*NAVIGATION MENU - ENDS*/
+
+
+/*HOME (INDEX) PAGE - STARTS*/
+/*The properties and values in this element has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=6yAAV-uP0po&t=29s]*/
+.img-index {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;  
+}
+
+/*The declarations has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=qTGbWfEEnKI&list=PLH7H7OKKWG3T0SAJxSVBxr-Qz-219iWeH&index=11]*/
+main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home-headline h1 {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px; 
+    margin-bottom: 10px;
+    padding: 30px;
+    color: rgb(62, 13, 5, .5);
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05em;
+    font-size: 60px;
+}
+
+.home-headline h3 {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px; 
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(62, 13, 5, .9);
+    font-weight: 600;
+    letter-spacing: .05em;
+}
+
+/*The '.col-sm' class selector is part of Bootstrap sourcecode (see index.html). However, the property values set are my own. Source: [https://getbootstrap.com/docs/4.1/layout/grid/]*/
+.col-sm {
+    width:24%;
+    height: auto;
+    text-align: center;
+    color: rgb(62, 13, 5, .85);
+    padding: 30px;
+}
+
+.col-sm i {
+    font-size: 4.4rem;/*70px*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col-sm .homeicon {
+color: rgb(255, 215, 0);
+}
+
+.col-sm h2 {
+    margin-top:50px;
+    font-weight: 600;
+}
+
+.col-sm h3 {
+    font-weight: 500;
+}
+
+.col-sm h4 {
+    font-weight: 600;
+}
+
+.col-sm p {
+    padding: 5px;
+    margin: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.home-footer-style {
+    background-color: rgb(255, 215, 0);
+}
+
+.homeicon:hover{
+    color: rgb(255, 165, 0);
+}
+/*HOME (INDEX) PAGE - ENDS*/
+
+
+/*ABOUT PAGE - STARTS*/
+/*The properties and values in this element has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=6yAAV-uP0po&t=29s]*/
+.img-about {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%; 
+}
+
+.about-header-style {
+    background-color: rgba(253, 139, 196, .7);
+}
+
+.about-footer-style {
+    background-color:rgba(253, 139, 196, .7);
+}
+
+ .about-container{
+     box-sizing: border-box;
+}
+ 
+.about {
+    padding: 30px;
+    background-image: linear-gradient(to right, rgba(250, 175, 225), rgba(250, 175, 225, 0.3));
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.about h2 {
+    padding:  5px;
+    font-weight:600;
+    color:rgb(62, 13, 5, .85);
+}
+
+.about p {
+    font-weight: 500;
+    color:rgb(62, 13, 5, .85);
+}
+
+.about i {
+    font-size: 40px;
+}
+
+/*The properties and values in this code/element has been amended to suit the need of my website. Source: [https://www.w3schools.com/howto/howto_css_image_center.asp]*/
+.founder img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;  
+    width: 300px;
+    height: 350px;
+}
+/*ABOUT PAGE - ENDS*/
+
+
+/*RECIPES PAGE - STARTS*/
+/*The properties and values in this element has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=6yAAV-uP0po&t=29s]*/
+.img-recipes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%; 
+}
+
+.recipes-header-style {
+    background-color: rgb(151, 231, 29, 0.5);
+}
+
+.recipes-footer-style {
+    background-color:rgb(151, 231, 29, 0.5);
+}
+
+.recipe-header {
+    text-align: center;
+    padding: 10px;
+} 
+
+.recipe-header h1 {    
+    padding: 25px 50px;
+    color: rgb(151, 231, 29, 0.3);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05em;
+    font-size: 60px;
+}
+
+.recipe-header p {    
+    padding-bottom: 25px;
+    color: rgb(62, 13, 5, .85);
+    font-weight: 500;
+}
+
+.recipe-header a {
+    text-align: center;
+    padding: 10px;
+    color: rgb(62, 13, 5, .85);
+    text-decoration: none;
+    font-weight: 500;
+}
+  
+.recipe-boxes {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 50px;
+    color: rgb(62, 13, 5, .85);
+}
+  
+section .recipe-boxes {
+    padding: 10px 10px;
+}
+  
+.recipe-boxes div {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+  
+.center-recipe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.recipe-header a:hover {
+    color:rgb(151, 231, 29);
+}
+
+/*For RECIPE-BOX1*/
+#box1 {
+    width: 100%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+    background-color: rgb(151, 231, 29, .5);
+}
+  
+#box1 h2 {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+#box1 h3 {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+#box1 i {
+    padding: 5px 5px;
+    font-size: 20px;
+}
+  
+#box1 span {
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+#box1 p {
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+#box1 li {
+    display: list-item;
+}
+
+/*For RECIPE-BOX2*/
+#box2 {
+    width: 100%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+    background-color: rgb(151, 231, 29, 0.5);
+}
+  
+#box2 h2 {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+#box2 h3 {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+#box2 i {
+    padding: 5px 5px;
+    font-size: 20px;
+}
+  
+#box2 span {
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#box2 p {
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+#box2 li {
+    display: list-item;
+}
+
+/*For RECIPE-BOX3*/
+#box3 {
+    width: 100%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+    background-color: rgb(151, 231, 29, 0.5);
+}
+  
+#box3 h2 {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+#box3 h3 {
+    padding: 5px 5px;
+    font-weight: 600;
+}
+
+#box3 i {
+    padding: 5px 5px;
+    font-size: 20px;
+}
+  
+#box3 span {
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+#box3 p {
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+  
+#box3 li {
+    display: list-item;
+}
+
+/*This element is for the in-text hyperlink on the recipes page. The feature has only been used once on the recipes page.*/  
+#footer {
+    text-decoration: none;
+}
+/*RECIPES PAGE - ENDS*/
+
+
+/*PLAYLISTS PAGE - STARTS*/
+/*The properties and values in this element has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=6yAAV-uP0po&t=29s]*/
+.img-playlists {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%; 
+}
+
+div iframe {
+    display: inline-block;
+    vertical-align: middle; 
+    width: 100%;
+    height: 450px;
+    padding: 20px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-width: 0;
+}
+
+.playlists-header-style {
+    background-color: rgba(63, 25, 202, .5);
+    font-weight: 600;
+}
+
+.playlists-footer-style {
+    background-color:rgba(63, 25, 202, .5);
+}
+
+#playlist-header {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px; 
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(62, 13, 5, .9);
+} 
+
+#playlist-header h1 {
+    color: rgba(63, 25, 202, .5);
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05em;
+    font-size: 60px;
+}
+
+#playlist-header span {
+    color: rgba(63, 25, 202, .5);
+    font-weight: 700;
+}
+
+.playlisticon i {
+    font-size: 70px;
+    padding: 5px 5px;
+    color: rgba(63, 25, 202, .8);
+}
+
+.playlisticon i:hover {
+    color: rgba(63, 25, 202, .2);
+}
+/*PLAYLISTS PAGE - ENDS*/
+
+
+/*CONNECT PAGE - STARTS*/
+/*The properties and values in this element has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=6yAAV-uP0po&t=29s]*/
+.img-connect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.connect-header-style {
+    background-color: rgb(255, 165, 0);
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+
+#connect-background {
+    background-color: rgb(99, 172, 229, .15);
+    width: 98%;
+    height: auto;
+    padding: 40px;
+    border: 2px solid rgb(255, 165, 0);
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: rgb(255, 165, 0);
+}
+
+.cwu-form  p {
+    padding: 5px 5px;
+    margin: 15px; 
+    font-size: 16px; 
+    font-weight: 500; 
+}
+
+.cwu-form  h2 {
+    padding-top: 15px; 
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.cwu-form h4 {
+    margin-top: 30px;
+    margin-bottom: 15px; 
+    font-weight: 500;
+}
+
+.cwu-form  i {
+    font-size: 30px;
+    margin-left: 5px; 
+    margin-right: 5px; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+.handle  i {
+    font-size: 40px;
+    display: inline-block;
+    color: rgb(255, 165, 0);
+    text-align: left;
+    padding: 15px;
+}
+
+.handle  input {
+    padding: 5px;
+}
+    
+.cwu-form label {
+    padding: 5px;
+    font-weight: 600; 
+}
+
+.cwu-form input { 
+    padding: 5px;   
+    border: 2px solid rgb(255, 165, 0);
+    border-radius: 3%;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-style {
+    padding: 20px;
+}
+
+.button-style input  {
+    border: 2px solid rgb(255, 165, 0);
+    background-color: transparent;
+    height: 50px;
+    font-weight: 600;
+    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: rgb(255, 165, 0);
+}  
+    
+.cwu-form i:hover{
+    color: rgb(99, 172, 229);
+}
+
+input:hover {
+    color: rgb(99, 172, 229);
+}
+
+.button-style input:hover {
+    color: rgb(99, 172, 229);
+}
+
+.our-details {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    text-align: left;
+    padding: 20px;
+}
+
+.our-details h5 {
+    font-weight: 700; 
+    color:rgb(255, 165, 0);
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.our-details i {
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.our-details a {
+    text-decoration: none;
+    color:rgb(255, 165, 0);
+}
+
+.our-details span {
+    color:rgb(255, 165, 0);
+}
+
+.our-details a:hover {
+    color: rgb(99, 172, 229);
+}
+
+.our-details i:hover {
+    color: rgb(99, 172, 229);
+}
+
+/*The '.connect-footer-style...' element has been created as the :hover property are on the other pages' footers. Thier values blend in with the footer background-colour of the connect.html page*/
+.connect-footer-style {
+    background-color:rgb(255, 165, 0);
+}
+/*CONNECT PAGE - ENDS*/
+
+
+/*GOOGLE MAPS SCREENSHOT - STARTS*/
+/*The properties and values in this code/element has been amended to suit the need of my website. Source: [https://www.w3schools.com/howto/howto_css_image_responsive.asp]*/
+.gmaps {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+/*GOOGLE MAPS SCREENSHOT - ENDSS*/
+
+
+/*SCROLL FEATURE - STARTS*/
+/* The properties for the #backtoheader id has been adapted from a W3School tutorial. The values have been customised by myself to suit the site's layout. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]*/
+#backtoheader {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    border: 3px solid rgba(62, 13, 5);
+    font-size: 18px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: rgba(62, 13, 5);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#backtoheader:hover {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+/*SCROLL FEATURE- ENDS*/
+
+
+/*FOOTER -STARTS*/
+/*The declarations has been amended to suit the need of my website. Origin Source:[https://www.youtube.com/watch?v=qTGbWfEEnKI&list=PLH7H7OKKWG3T0SAJxSVBxr-Qz-219iWeH&index=11]*/
+footer {
+    grid-area: footer;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#copyright-style {
+    font-size: 15px;
+    color: rgba(62, 13, 5, 0.8);
+    font-weight: 500;
+}
+
+.sm-links  {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+    width: 100%; 
+    overflow: auto;
+}
+
+.sm-links a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    font-size: 30px;
+    color: rgba(62, 13, 5, 0.8);
+}
+
+.sm-links a:hover {
+    color:  rgb(255, 255, 255);
+}
+/*FOOTER - ENDS*/
+
+
+/*404 ERROR PAGE - STARTS*/
+/*The properties and values in this code/element has been amended to suit the need of my website. Source: [https://www.w3schools.com/howto/howto_css_image_center.asp]*/
+.error-container {
+    background-color: rgb(255, 215, 0);
+}
+
+.error-logo {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-container h1 {
+    color: rgba(62, 13, 5, 0.7);
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.error-container p {
+    color: rgba(62, 13, 5, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.error-container a {
+    color: rgba(62, 13, 5, 0.8);
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.error-container a:hover {
+    color: rgb(255, 255, 255);  
+}
+/*404 ERROR PAGE - ENDS*/
+
+
+
+/*MEDIA QUERIES - STARTS*/
+/*Some of the declarations, property values and conditions in the media query code has been influenced by guidance/tutorials from following Sources:
+[https://www.youtube.com/watch?v=qTGbWfEEnKI&list=PLH7H7OKKWG3T0SAJxSVBxr-Qz-219iWeH&index=11]
+[https://getbootstrap.com/docs/5.0/layout/breakpoints/] 
+[https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width/]
+[https://docs.microsoft.com/en-us/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design]
+*/
+
+/*Small mobile screens.*/
+/*Aside/Sidebar element stacks underneath header*/
+@media only screen and  (max-width: 320px) {
+    body {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "sect1" 
+        "sect2" 
+        "sect3"
+        "main"
+        "footer";
+    } 
+}
+
+/*For scaling in between small mobile screens (up to 320px in width) to larger screens (700px in width and greater).*/
+/*Aside/Sidebar element stacks underneath header*/
+@media only screen and (max-width: 640px) and (min-width: 320px) {
+
+    body {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "sect1" 
+        "sect2" 
+        "sect3"
+        "main"
+        "footer";
+    } 
+
+    .handle i {
+        font-size: 30px;
+        display: inline-block;
+        color: rgb(255, 165, 0);
+        text-align: left;
+    }
+}
+
+/*For larger mobile screens (400px in width and greater), in portrait orientation*/
+/*Aside/Sidebar element stacks underneath header*/
+@media only screen and (min-width: 640px) {
+    body {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "sect1" 
+        "sect2" 
+        "sect3"
+        "main"
+        "footer";
+    }
+}
+
+/*For standard tablet screens, in portrait orientation*/
+/*Aside/Sidebar element stacks underneath header*/
+@media only screen and (min-width: 700px) {
+    body {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "sect1" 
+        "sect2" 
+        "sect3"
+        "main"
+        "footer";
+    }
+
+    .handle i {
+        font-size: 30px;
+        display: block;
+        color: rgb(255, 165, 0);
+        text-align: left;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "sect1" 
+        "sect2" 
+        "sect3"
+        "main"
+        "footer";
+    }
+
+    .handle i {
+        font-size: 30px;
+        display: inline-block;
+        color: rgb(255, 165, 0);
+        text-align: left;
+    }
+
+    .handle label {
+        padding: 10px;
+    }
+}
+
+/*Standard to larger dekstop/laptop screens.*/
+/*Aside/Sidebar element positions on the left-side of the device's screen*/
+@media only screen and  (min-width: 900px) {
+    body {
+            margin: 0;
+            display: grid; 
+            grid-template-columns: 20% auto auto auto;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "sidebar header header header"
+            "sidebar sect1 sect2 sect3"
+            "sidebar main main main"
+            "sidebar footer footer footer";
+    }
+}
+
+/*Larger desktop screens. */
+/*Aside/Sidebar element positions on the left-side of the device's screen*/
+@media only screen and (min-width: 1200px) {
+
+    body {
+        margin: 0;
+        display: grid; 
+        grid-template-columns: 20% auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "sidebar header header header"
+        "sidebar sect1 sect2 sect3"
+        "sidebar main main main"
+        "sidebar footer footer footer";
+    }
+
+    .handle i {
+        font-size: 30px;
+        display: block;
+        color: rgb(255, 165, 0);
+        text-align: left;
+    }
+}
+/*MEDIA QUERIES - ENDS*/
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Please Note: All icons and buttons on the site have been sourced from FontAwesome [https://fontawesome.com/] and W3Schools.com [https://www.w3schools.com/howto/howto_css_social_media_buttons.asp]-->
+    <!--Please Note: All images on the site have been sourced from Pexels.com [https://www.pexels.com/]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="description" content=", UK">
+        <meta name="keywords" content="black, women, health, wellness, mindfullness, UK">
+        <title>Coca Women Wellness</title>
+        <!--Include these stylesheets in any page of this site-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <!--The stytlesheet below is linked this way as it links to the local bootstrap css and js folders on my device and included in this repo. Source[https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <link rel="stylesheet" href="assets/css/bootstrap-sourcecode/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!--Image Credit: Charlotte May-->
+        <aside>
+            <img class="img-connect" src="assets/images/pexels-charlotte-may-5965896_edited.jpg" alt="woman looking down at her mobile screen with headphones in her ears"> 
+        </aside>
+
+        <!--The class 'connect-header-style dictates the stylyling of the element (e.g. orange for the connect.html)'-->
+        <header class="connect-header-style">
+            <!--Nav bar code has been sourced from Bootstrap.com. However, I have customsied some of the elements Origin Source:[https://getbootstrap.com/docs/4.0/components/navbar/]-->
+            <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Do not change this <a> tag as it holds the logo for the website-->
+                <a href="index.html"><img src="assets/images/logowtextncb72dpi.png" alt="woman with outlined face logo" id="img-logo"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="recipes.html">RECIPES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="playlists.html">PLAYLISTS</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link active" href="connect.html">CONNECT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="connect-background">
+                <!--The structure of this form has been developed from referencing the 'form' activities and challenges provided by the Code Institue. 
+                The 'action=' value has been used after receiving approval from Code Institue's Tutoring Support team.
+                Origin Source:[https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/ee2afa91c35e4268b7de2ea21fe311dd/9?activate_block_id=block-v1%3ACodeInstitute%2BHE101%2B2020%2Btype%40vertical%2Bblock%4004ae28359c4340048efdeeacf3363eb0].-->
+                <form class="cwu-form" action="https://formdump.codeinstitute.net" method="post">
+                    <h2>Connect with us!</h2>
+                    <h6>Would you like to stay updated on the content we share? If so, register today to stay updated!</h6>
+                                        
+                    <label for="fname">Your Name:</label>
+                    <input type="text" name="fname" id="fname" placeholder=" your_name " aria-label="your-name-input" aria-hidden="true" required />
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder=" youremail@gmail.com " aria-label="your-email-input" aria-hidden="true" required/>
+                            
+                    <h4>Want to connect via our social media? Why not share your handle?</h4>
+
+                    <!--The aria-label has been used insted of aria-labelledby as text is not visble. For more information: [https://www.w3.org/TR/wai-aria/#aria-label]-->
+                    <!--The "aria-hidden=true" element been applied to the icon tags as they have sematic meaning. For more information: [https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility]-->
+                    <div class="handle"> 
+                        <label for="igtag" aria-label="instagram-tag" aria-hidden="true"><i class="fab fa-instagram"></i>Instagram</label>    
+                        <input type="text" name="handles" id="igtag" aria-label="enter your instagram handle" aria-required="false" placeholder=" @your_handle ">
+                                    
+                        <label for="twittertag" aria-label="twitter-tag" aria-hidden="true"><i class="fab fa-twitter"></i>Twitter</label>
+                        <input type="text" name="handles" id="twittertag" aria-label=" enter your twitter handle" aria-required="false" placeholder=" @your_handle">
+                         
+                        <label for="pintag" aria-label="pinterest-tag" aria-hidden="true"><i class="fab fa-pinterest-p"></i>Pinterest</label>
+                        <input type="text" name="handles" id="pintag" aria-label="enter your pinterest handle"  aria-required="false" placeholder=" @your_handle">
+                    </div>  
+                                                            
+                    <h4>What type of content would you like to be notified about?</h4>
+
+                    <!--The aria-labelledby has been used as there is visible text. For more information: [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute]-->        
+                    <i class="far fa-hand-point-right"></i>
+                    <span id="radio-group">
+                        <label for="recipes">Recipes</label>
+                        <input type="radio" name="content" value="recipies" aria-labelledby="radio-group" aria-hidden="true" id="recipes">
+                                        
+                        <label for="playlists">Playlists</label>
+                        <input type="radio" name="contnent" value="playlists" aria-labelledby="radio-group" aria-hidden="true" id="playlists">
+                                        
+                        <label for="our-socials">Our Socials</label>
+                        <input type="radio" name="content" value="our-socials" aria-labelledby="radio-group" aria-hidden="true" id="our-socials">
+                                    
+                        <label for="everything">Everything</label>
+                        <input type="radio" name="content" value="everything" aria-labelledby="radio-group" aria-hidden="true" id="everything">
+                    </span>
+            
+                    <div class="button-style">
+                        <input aria-label="submit" aria-hidden="true" type="submit" value="Sign me up!"> 
+                    </div> 
+                </form>
+
+                <div class="our-details">
+                    <div>
+                        <!--Initially an iframe element was used for the google maps but due to an error on the hosting site, the ifram was no longer presenting. 
+                        A screenshot of the Manchester area in Google Maps has been used. Source:[https://www.google.com/maps/place/Piccadilly+Gardens,+Manchester+M60+1AY/@53.4808874,-2.2391291,17z/data=!3m1!4b1!4m5!3m4!1s0x487bb1bf73100639:0x67a100e10acc5a25!8m2!3d53.4809634!4d-2.2369427]-->
+                        <img src="assets/images/mapscreenshot.PNG" class="gmaps" alt="A google maps screenshot of Manchester Picaddilly Gardens area">
+                    </div>
+
+                    <h5>Our Details: </h5>
+                        <!--The links opens up a new tab for the destination page-->
+                        <a href="mailto:missamfelicia@gmail.com" target="_blank" rel="external" aria-label="letter-icon" aria-hidden="true"><i class="far fa-envelope"></i>missamfelicia@gmail.com</a>
+                        <br>
+                        <a href="https://uk.linkedin.com/" target="_blank" rel="external" aria-label="linkedin-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i>https://uk.linkedin.com/cww</a>
+                </div>
+             
+                <div class="our-details">
+                    <h5>Our Address: </h5>
+                    <span>
+                        Coca Women Wellness
+                        <br>
+                        PO Box 9945
+                        <br>
+                        Picadilly Gardens, Manchester
+                        <br>
+                        M60 9LS
+                        UK
+                    </span>
+                </div>
+            </div>
+        </main>
+
+        <!-- The code for the element button has been adapted from a W3School tutorial. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <button onclick="topFunction()" id="backtoheader" title="Go to top" aria-label="upward arrow scrolls to top" aria-hidden="true"><i class="fas fa-arrow-up"></i></button>
+
+        <!--The class 'connect-footer-style' dictates the stylyling of the element (e.g. blue for the playlists.html)'-->
+        <footer class="connect-footer-style">
+            <div class="sm-links">
+                <!--The links opens up a new tab for the destination page-->
+                <a href="https://twitter.com/" target="_blank" rel="external" aria-label="twitter-tag" aria-hidden="true" class="fa fa-twitter"></a>
+                <a href="https://discord.com/" target="_blank" rel="external" aria-label="discord-tag" aria-hidden="true" class="fab fa-discord"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="external" aria-label="instagram-tag" aria-hidden="true" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="external" aria-label="youtube-tag" aria-hidden="true" class="fa fa-youtube"></a>
+                <a href="https://www.pinterest.co.uk/" target="_blank" rel="external" aria-label="pinterest-tag" aria-hidden="true" class="fa fa-pinterest"></a>
+            </div>
+            <div id="copyright-style">Copyright<span> &#169; </span> Coca Women Wellness. All Rights Reserved 2021.</div>
+        </footer>
+
+        <!--This script has been adapted from a W3School Tutorial. The 'getElementById' condition has been customised by me. Source:[https://www.w3schools.com/howto/howto_js_scroll_to_top.asp]-->
+        <script src="assets/js/scroll-feature/scroll.js"></script>
+
+        <!--Fontawesome script is below, this supports the icons used throughout  the website's pages-->
+        <script src="https://kit.fontawesome.com/1699136767.js" crossorigin="anonymous"></script>
+      
+        <!--This script below is linked this way as it links to the local bootstrap js folders on my device and included in this repo. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="assets/js/bootstrap-sourcecode/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with some functionalities on the site as I am using some Bootstrap components. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <!--This script has been included to assist with the navigation bar, Bootstrap component. Soucre: [https://getbootstrap.com/docs/4.0/getting-started/introduction/]-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>
