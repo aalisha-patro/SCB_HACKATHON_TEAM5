@@ -1,0 +1,87 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-).What are the symptoms you are facing?",
+        "Hello, thanks for visiting.What are the symptoms you are facing?",
+        "Hi there.Please tell what are the symptoms you are facing?"
+        
+      ]
+    },
+    {
+      "tag":"reproductive health issue",
+      "patterns":["I am having heavy bleeding","heavy bleeding","bleeding in between periods","i am having bleeding in between periods","bleeding after sex","I am having bleeding after intercourse",
+    "Itching, burning, or discharge from the vagina","I am having Itching in vagina","itching in vagina","burning sensation in vagina","I am having burning sensation from vagina","pelvic pain","infertility","irregular periods"],
+      "responses":["Have a healthy lifestyle, consume a nutritious food, drink plenty of water, and get adequate rest.Engage in regular exercise and abstain from alcohol and smoking, all of which might worsen menstrual issues. Counseling or therapy can be helpful for you experiencing reproductive health issues that are impacting your mental health or relationships. Medications can be used to treat a variety of reproductive health issues, such as hormonal imbalances, infections, and menstrual disorders. Examples of medications include antibiotics, birth control pills, and hormone replacement therapy."]
+    },
+    {
+      "tag":"Mental Health Issues",
+      "patterns":["Mood swings","suicidal thoughts","suicide","anxiety","trouble focusing","memory issues","feeling lost","nausea","exhaustion"],
+      "responses":["You should seek professional help if you experience severe or persistent symptoms of mental illness. Practicing self-care activities like meditation, yoga, journaling or pursuing hobbies can also help reduce stress and improve mental health."]
+    },
+    {
+      "tag":"Iron deficiency",
+      "patterns":["fatigue","weakness","shortness of breath","pale skin","brittle nails","cold hands and feet","dizziness", "headache"],
+      "responses":["This is the symptoms of Iron deficiency. We advise consuming spinach, meat, oysters, beans (particularly lima, navy, and kidney beans), lentils, and iron-fortified cereal to increase iron levels. Adult women require 18 mg per day."]
+    },
+    {
+      "tag":"Calcium deficiency",
+      "patterns":["muscle cramps","twitching","numbness","tingling in hands and feet","brittle bones","tooth decay"],
+      "responses":["This is the symptoms of Calcium deficiency. Dairy products, leafy green vegetables, nuts, and fish are examples of foods high in calcium that can help the body absorb more of it. Your medical professional might advise altering your diet to consume more calcium. You can also consume calcium supplemenmts"]
+    },
+    {
+      "tag":"Vitamin D deficiency",
+      "patterns":["Fatigue",
+      "Not sleeping well",
+      "Bone pain or achiness",
+      "Depression or feelings of sadness",
+      "Hair loss",
+      "Muscle weakness",
+      "Loss of appetite",
+      "Getting sick more easily",
+      "Pale skin"],
+      "responses":["I think you are facing vitamin D deficiency according to you symptoms.Salmon, herring, sardines, canned tuna, oysters, shrimp, and mushrooms are among the foods high in vitamin D. Alternatively, pick products like orange juice, oatmeal, cow's milk, soy milk, and vitamin D-fortified cereals.You can also obtain your daily amount by spending 10 minutes outside without using sunscreen."]
+    },
+    {
+      "tag":"Reproductive cancers",
+      "patterns":["Abnormal bleeding","Pelvic pain","constipation","diarrhea","frequent urination"],
+      "responses":["I think this is the symptoms of reproductive cancers. Some Treatments are surgery- Surgery is often the first line of treatment for reproductive cancers, especially for early-stage cancers,chemotherapy-  Chemotherapy uses drugs to kill cancer cells. It may be used alone or in combination with surgery and/or radiation therapy, radiotherapy- Radiation therapy uses high-energy beams to kill cancer cells. It may be used alone or in combination with surgery and/or chemotherapy, targeted therapy-Targeted therapy is a type of cancer treatment that targets specific molecules or pathways that are involved in cancer growth. It may be used alone or in combination with other treatments."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    
+    {
+      "tag": "addiction",
+      "patterns": [
+       "drugs","lose control","committing crimes","risky behaviour"
+      ],
+      "responses": [
+        "It is important to note that addiction can take many forms and can affect individuals differently. If you or someone you know is struggling with addiction, seeking professional help is important for successful treatment and recovery.",
+        "Here are some common treatment options for you :Behavioral therapy is a sort of therapy that aids people in changing their attitudes and actions about substance usage. Cognitive-behavioral therapy (CBT), dialectical behaviour therapy (DBT), and motivational interviewing are a few types of behavioural treatment. Medicine: Medication is a treatment option for several addictions, including opioid or alcohol addiction. Methadone, buprenorphine, and naltrexone are a few examples of drugs used to treat addiction. Support groups: For people in recovery, groups like Alcoholics Anonymous (AA) or Narcotics Anonymous (NA) can offer a caring environment."
+      ]
+    }
+    
+  ]
+}
+   
